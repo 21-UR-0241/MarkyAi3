@@ -58,10 +58,10 @@ export function GenerateView({ isGenerating, generatedImages }: GenerateViewProp
 
   const handleImageDoubleClick = () => {
     if (zoomLevel === 100) {
-      setZoomLevel(200); // Zoom in to 200%
+      setZoomLevel(200);
     } else {
-      setZoomLevel(100); // Zoom out to 100%
-      setPosition({ x: 0, y: 0 }); // Reset position when zooming out
+      setZoomLevel(100);
+      setPosition({ x: 0, y: 0 });
     }
   };
 

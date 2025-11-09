@@ -146,13 +146,6 @@ export function HistoryView({ generatedImages }: HistoryViewProps) {
                         <Maximize2 className="w-4 h-4" />
                       </Button>
                     </div>
-
-                    {/* Sparkle watermark */}
-                    {/* <div className="absolute bottom-3 right-3 pointer-events-none">
-                      <svg className="w-6 h-6 text-white/60" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0l2.5 7.5L22 10l-7.5 2.5L12 20l-2.5-7.5L2 10l7.5-2.5L12 0z"/>
-                      </svg>
-                    </div> */}
                   </>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg">
@@ -160,16 +153,6 @@ export function HistoryView({ generatedImages }: HistoryViewProps) {
                   </div>
                 )}
               </div>
-
-              {/* View full image link */}
-              {/* <button 
-                onClick={() => setSelectedImage(img)}
-                className="text-sm text-blue-600 hover:text-blue-700 hover:underline mb-2 cursor-pointer"
-              >
-                View full image
-              </button> */}
-
-              {/* Image details */}
               <div>
                 <p className="font-medium mb-2 line-clamp-2">{img.prompt}</p>
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
@@ -181,8 +164,6 @@ export function HistoryView({ generatedImages }: HistoryViewProps) {
           ))}
         </div>
       )}
-
-      {/* Full Image Modal - EXACT COPY FROM GENERATEVIEW */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 backdrop-blur-md bg-black/60 flex flex-col p-10">
           {/* Header - Simple with just title and buttons */}
